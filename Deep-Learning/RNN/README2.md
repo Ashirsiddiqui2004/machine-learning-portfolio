@@ -1,19 +1,30 @@
-## LSTM Sentiment Analysis
+# LSTM Sentiment Analysis & Deployment
 
-This project demonstrates how Long Short-Term Memory (LSTM) networks
-handle sequential text data for sentiment classification.
+This project demonstrates sentiment analysis using an LSTM model and its local deployment using FastAPI.
 
-### Problem
-Classify movie-related sentences as positive or negative.
+## Project Overview
+- LSTM-based sentiment analysis
+- Handles long-term dependencies better than RNN
+- REST API created using FastAPI
+- Tested using Swagger UI
 
-### Approach
-- Text tokenization and padding
-- Embedding layer for word representation
-- LSTM layer for sequence memory
-- Sigmoid output for binary classification
+## Tech Stack
+- Python
+- TensorFlow / Keras
+- FastAPI
+- Uvicorn
+- NumPy
 
-### Concepts Covered
-- Sequential data
-- Vanishing gradient problem
-- Why LSTM is better than simple RNN
-- Text classification using deep learning
+## API Endpoints
+
+### GET /
+Health check endpoint
+
+### POST /predict
+Predict sentiment from input text.
+
+Example request:
+```json
+{
+  "text": "This movie was amazing"
+}
