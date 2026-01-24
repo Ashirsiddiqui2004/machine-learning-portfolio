@@ -30,3 +30,10 @@ https://www.kaggle.com/c/dogs-vs-cats
 - Data augmentation
 - Transfer learning (VGG16 / ResNet)
 - Hyperparameter tuning
+
+## 📊 Results & Learnings
+
+- The CNN model was able to learn meaningful visual features from images.
+- Training and validation accuracy improved steadily across epochs.
+- Observed the impact of image preprocessing and normalization on performance.
+- This project strengthened my understanding of CNN architecture and image classification workflows.
